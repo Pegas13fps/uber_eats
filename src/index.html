@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uber Eats</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <header id="top" class="header page__header">
+        <div class="header__content">
+            <img class="header__logo" src="./images/logo.png" alt="Logo Uber Eats">
+            <div class="header__delivery">
+                <div class="when"><input type="text" size="40" placeholder="When" value="ASAP"></div>
+                <span class="sign">to</span>
+                <div class="place">
+                    <img src="./images/group.png" alt="Place pointer">
+                    <input type="text" name="where" size="18" placeholder="Enter your address" value="ul. Tarasivska St, 16">
+                </div>
+            </div>
+            <div class="header__btns">
+                <button class="signIn" type="button">Sign In</button>
+                <button class="register" type="button">Register</button>
+                <img src="./images/basket.png" alt="Basket image">
+            </div>
+        </div>  
+        <div class="search__block">
+            <form class="search__field" action="#" method="post">
+                <img src="./images/search.png" alt="Search image">
+                <input type="text" name="search" size="200" placeholder="Search for restaurant or cuisine" value="">
+            </form>
+        </div>
+    </header>
+
+    <main class="main page__main">
+        <p class="main__title">Kyiv Restaurants</p>
+        <div class="main__block">
+            <div class="main__block__card">
+                <img class="main__block__img" src="./images/mcdonalds.png" alt="mcdonalds">
+                <p class="main__block__place">Макдоналдс</p>
+                <p class="main__block__price">₽₽ • Бургеры</p>
+                <p class="main__block__time">25 - 35 Min</p>
+            </div>
+            <div class="main__block__card">
+                <img class="main__block__img" src="./images/wokwei.png" alt="wokwei">
+                <p class="main__block__place">WOKWEI</p>
+                <p class="main__block__price">₴ • Китайська • Азіатська</p>
+                <p class="main__block__time">40 - 50 Min</p>
+            </div>
+            <div class="main__block__card">
+                <img class="main__block__img" src="./images/yizha.png" alt="yizha">
+                <p class="main__block__place">YIZHA</p>
+                <p class="main__block__price">₴₴ • Американська • Бургери • Вулична їжа</p>
+                <p class="main__block__time">35 - 45 Min</p>
+            </div>
+            <div class="main__block__card">
+                <img class="main__block__img" src="./images/musafir.png" alt="musafir">
+                <p class="main__block__place">Musafir (вул. Саксаганського)</p>
+                <p class="main__block__price">₴₴ • Близькосхідна</p>
+                <p class="main__block__time">30 - 40 Min</p>
+            </div>
+            <div class="main__block__card">
+                <img class="main__block__img" src="./images/wokwei2row.png" alt="wokwei2row">
+                <p class="main__block__place">WOKWEI</p>
+                <p class="main__block__price">₴ • Китайська • Азіатська</p>
+                <p class="main__block__time">40 - 50 Min</p>
+            </div>
+            <div class="main__block__card">
+                <img class="main__block__img" src="./images/milkbar.png" alt="milkbar">
+                <p class="main__block__place">Milk Bar</p>
+                <p class="main__block__price">₴₴ • Десерти • Європейська</p>
+                <p class="main__block__time">25 - 35 Min</p>
+            </div>
+            <div class="main__block__card">
+                <img class="main__block__img" src="./images/mimosapizza.png" alt="mimosapizza">
+                <p class="main__block__place">Mimosa Brooklyn Pizza</p>
+                <p class="main__block__price">₴₴ • Італійська • Піца • Американська</p>
+                <p class="main__block__time">15 - 25 Min</p>
+            </div>
+            <div class="main__block__card">
+                <img class="main__block__img" src="./images/tobe.png" alt="tobe">
+                <p class="main__block__place">To Be</p>
+                <p class="main__block__price">₴₴ • Японська • Азіатська • Суші</p>
+                <p class="main__block__time">25 - 35 Min</p>
+            </div>
+            <div class="main__block__card">
+                <img class="main__block__img" src="./images/druzicafe.png" alt="druzicafe">
+                <p class="main__block__place">Drzi Cafe (вул. Прорiзна)</p>
+                <p class="main__block__price">₴₴ • Американська • Сучасна європейська • У...</p>
+                <p class="main__block__time">30 - 40 Min</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer page__footer">
+        <div class="footer__logo">
+            <img src="./images/white-logo.png" alt="Uber logo">
+        </div>
+        <div class="footer__navigation">
+            <div class="footer__navigation__social">
+                <div class="language__box">
+                    <img src="./images/world.png" alt="Planet">
+                    <select class="language" name="language" id="language">
+                        <option value="english">ENGLISH</option>
+                        <option value="ukrainian">UKRAINIAN</option>
+                        <option value="russian">RUSSIAN</option>
+                    </select>
+                </div>
+                <div class="uber__hash">
+                    <a href="#"><span>#</span>UberEats</a>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank" class="link facebook"></a>
+                        <a href="https://twitter.com/" target="_blank" class="link twitter"></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="link instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__navigation__partners">
+                <a href="#">About UberEats</a>
+                <a href="#">Become a Delivery Parthner</a>
+                <a href="#">Become a Restaurant Partner</a>
+            </div>
+            <div class="footer__navigation__info">
+                <a href="#">See all cities</a>
+                <a href="#">Pricing</a>
+                <a href="#">Help</a>
+                <a href="#">FAQs</a>
+            </div>
+        </div>
+        <div class="footer__apps">
+            <a href="https://itunes.apple.com/" target="_blank" class="itunes__app"><img src="./images/App_Store.png" alt="Apple store"></a>
+            <a href="https://play.google.com/" target="_blank" class="google__app"><img src="./images/google_store.png" alt="Google store"></a>
+        </div>
+        <div class="footer__copyright">
+            <p class="copyright">© 2019 Uber Technologies Inc.</p>
+            <a class="" href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+        <div class="topButton"><a href="#top"><img src="./images/arrow.png" alt="Arrow"></a></div>
+    </footer>
+
+</body>
+</html>
