@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Uber Eats</title>
-    <script src="./main.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" defer></script>
+    <script src="./main.js" defer></script>
 </head>
 <body>
 
     <header id="top" class="header page__header">
-        <div class="header__content">
-            <img class="header__logo" src="./images/logo.png" alt="Logo Uber Eats">
-            <div class="header__delivery">
-                <div class="when"><input type="text" size="40" placeholder="When" value="ASAP"></div>
+        <for class="header__content">
+            <a href="#"><img class="header__logo" src="./images/logo.png" alt="Logo Uber Eats"></a>
+
+            <form action="#" method="POST" class="header__delivery">
+                <input class="when" type="text" size="40" placeholder="When" value="ASAP">
                 <span class="sign">to</span>
-                <div class="place">
+                <label for="where" class="place">
                     <img src="./images/group.png" alt="Place pointer">
                     <input type="text" name="where" size="18" placeholder="Enter your address" value="ul. Tarasivska St, 16">
-                </div>
-            </div>
+                </label>
+            </form>
+
             <div class="header__btns">
                 <button class="signIn" type="button">Sign In</button>
                 <button class="register" type="button">Register</button>
