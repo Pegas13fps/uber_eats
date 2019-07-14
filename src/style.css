@@ -171,6 +171,8 @@ header {
 }
 
 .main__block__img {
+  width: 308px;
+  height: 256px;
   margin-bottom: 16px;
   position: relative;
   bottom: 0;
